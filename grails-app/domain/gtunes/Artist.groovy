@@ -6,6 +6,10 @@ class Artist {
 	static hasMany = [albums:Album]
 
     static constraints = {	
-    	name()
+    	name(blank:false)
+    }
+    
+    String toString() {
+    	name
     }
 }

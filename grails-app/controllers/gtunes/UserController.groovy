@@ -2,5 +2,5 @@ package gtunes
 
 class UserController {
 
-    def index() { }
+    static scaffold = User
 }

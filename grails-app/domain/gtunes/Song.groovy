@@ -7,7 +7,11 @@ class Song {
 	static belongsTo = [album:Album]
 
     static constraints = {
-    	title()
+    	title(blank:false)
     	duration(min:1)
+    }
+    
+    String toString() {
+    	title
     }
 }
